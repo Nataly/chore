@@ -1,0 +1,393 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    color: #555;
+    font: normal 10pt Arial,Helvetica,sans-serif;
+    /*	background: #EFEFEF;*/
+    background: #FFFFFF;
+    background-image: url('../images/fondo3.jpg');
+    background-repeat:repeat-x;
+}
+
+#page
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: white;
+    /*    border: 1px solid #C9E0ED;*/
+    -moz-box-shadow: 0 0 30px 5px #999;
+    -webkit-box-shadow: 0 0 30px 5px #999;
+    box-shadow:  0 0 30px 5px #999;
+
+    -moz-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    -webkit-transition: all 0.1s ease-out;
+    -ms-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+}
+
+#page:hover{
+    -webkit-box-shadow: 0 0 100px rgba(0,0,0,0.3);
+    -moz-box-shadow:    0 0 100px rgba(0,0,0,0.3);
+    box-shadow:         0 0 100px rgba(0,0,0,0.3);
+    -moz-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    -webkit-transition: all 0.1s ease-out;
+    -ms-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+}
+
+#header
+{
+    margin: 0;
+    padding: 0;
+    /*	border-top: 3px solid #C9E0ED;*/
+    /*    background-color: #009dff;*/
+    /*    background-color: #00275e;*/
+    background-color: #0681F3;
+    background-image: url('../images/LOGOB-SFsin70.png');
+    background-repeat: no-repeat;
+    background-position: 12px 4px;
+    /*    background-color: #0779e2;*/
+    color: #FFFFFF;
+
+}
+
+#content
+{
+    /*    padding: 10px;*/
+    padding-top: 0px;
+}
+
+#sidebar
+{
+    padding: 20px 20px 20px 0;
+}
+
+#footer
+{
+    padding: 10px;
+    margin: 10px 20px;
+    font-size: 0.8em;
+    text-align: right;
+    border-top: 1px solid #d2d2d2;
+    /*    border-top: 1px solid #C9E0ED;*/
+}
+
+.cf {
+    position:relative;
+    height:33px;
+    width:32px;
+    margin:0 auto;
+    display: inline-block;
+}
+.cf img {
+    position:absolute;
+    left:0;
+    -webkit-transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -o-transition: opacity .2s ease-in-out;
+    -ms-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+}
+
+.cf img.top:hover {
+    opacity:0;
+}	
+#titulo
+{
+    padding:  22px 0px 0px 19px;
+    font-size: 330%;
+    font-family: 'Open Sans', sans-serif;
+    /*        font-family: 'Oswald', sans-serif;*/
+    /*    text-shadow: -1px -1px 1px #2B59A1;*/
+    text-shadow: 2px 0px 7px #2B59A1;
+    font-weight: 600;
+    letter-spacing: -1px;
+    /*    filter: progid:DXImageTransform.Microsoft.Shadow(color='#2B59A1', Direction=30, Strength=4);*/
+}
+#subtitulo
+{
+    padding:  0px 0px 6px 22px;
+    font-size: 150%;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    /*        font-family: 'Oswald', sans-serif;*/
+    text-shadow: 2px 0px 7px #2B59A1;
+    /*    text-shadow: -1px -1px 1px #2B59A1;*/
+    font-weight: 600;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    margin-top: -10px;
+}
+
+.lateral{
+    width: 47%;  /*Este será el ancho que tendrá tu columna*/
+    float:left; /*Aqui determinas de lado quieres quede esta "columna" */
+    margin-left: 60px;
+}
+.lateral a{
+    /*    background-color: #0681F3;*/
+    /*    background-color: #0779e2;*/
+    color: #FFFFFF;
+    text-decoration: none;
+    /*    width: 46%;  Este será el ancho que tendrá tu columna*/
+    /*    float:left; Aqui determinas de lado quieres quede esta "columna" */
+}
+.lateralleft{
+    width: 66%;  /*Este será el ancho que tendrá tu columna*/
+    float:left; /*Aqui determinas de lado quieres quede esta "columna" */
+    margin-left: 22px;
+    margin-top: 10px;
+}
+.lateralright{
+
+    font-family: 'Open Sans', sans-serif;
+    margin-left:70%; /*Este margen hace que no se encime el contenido en tu menúlateral, es     importante que pongas un pocos pixeles más que el ancho  de tu columna lateral*/
+    line-height:150%;
+    padding-left: 8px;
+    /*    text-transform: uppercase;*/
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-right: 16px;
+    border-left: 1px solid #D2D2D2;
+}
+
+
+
+#principal{
+    margin-left:190px; /*Este margen hace que no se encime el contenido en tu menúlateral, es     importante que pongas un pocos pixeles más que el ancho  de tu columna lateral*/
+    height: 110px;
+    text-align:center;
+    line-height:150%;
+}
+
+#mainmenu
+{   
+    font-family: 'Open Sans', sans-serif;
+    margin-left:47%; /*Este margen hace que no se encime el contenido en tu menúlateral, es     importante que pongas un pocos pixeles más que el ancho  de tu columna lateral*/
+    height: 96px;
+    text-align:right;
+    line-height:150%;
+    /*    text-transform: uppercase;*/
+    font-size: 15px;
+    font-weight: 900;
+}
+
+#mainmenu ul
+{
+
+    padding:66px 10px 5px 0px;
+    margin:0px;
+
+
+}
+
+#mainmenu ul li
+{
+    display: inline;
+}
+
+#mainmenu ul li a
+{
+    color:#ffffff;
+    background-color:transparent;
+    font-family: 'Open Sans', sans-serif;
+    font-size:12px;
+    font-weight: bold;
+    text-decoration:none;
+    padding:5px 5px;
+    text-transform: uppercase;
+}
+
+#mainmenu ul li a:hover, #mainmenu ul li.active a
+{
+    /*    color: #6399cd;*/
+    /*    background-color:#EFF4FA;*/
+    text-shadow: -1px -1px 5px #2B59A1;
+    text-decoration:none;
+
+}
+
+div.flash-error, div.flash-notice, div.flash-success
+{
+    padding:.8em;
+    margin-bottom:1em;
+    border:2px solid #ddd;
+}
+
+div.flash-error
+{
+    background:#FBE3E4;
+    color:#8a1f11;
+    border-color:#FBC2C4;
+}
+
+div.flash-notice
+{
+    background:#FFF6BF;
+    color:#514721;
+    border-color:#FFD324;
+}
+
+div.flash-success
+{
+    background:#E6EFC2;
+    color:#264409;
+    border-color:#C6D880;
+}
+
+div.flash-error a
+{
+    color:#8a1f11;
+}
+
+div.flash-notice a
+{
+    color:#514721;
+}
+
+div.flash-success a
+{
+    color:#264409;
+}
+
+div.form .rememberMe label
+{
+    display: inline;
+}
+
+div.view
+{
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #C9E0ED;
+}
+
+div.breadcrumbs
+{
+    font-size: 0.9em;
+    padding: 5px 20px;
+}
+
+div.breadcrumbs span
+{
+    font-weight: bold;
+}
+
+div.search-form
+{
+    padding: 10px;
+    margin: 10px 0;
+    background: #eee;
+}
+
+.portlet
+{
+
+}
+
+.portlet-decoration
+{
+    padding: 3px 8px;
+    background: #B7D6E7;
+    border-left: 5px solid #6FACCF;
+}
+
+.portlet-title
+{
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    color: #298dcd;
+}
+
+.portlet-content
+{
+    font-size:0.9em;
+    margin: 0 0 15px 0;
+    padding: 5px 8px;
+    background:#EFFDFF;
+}
+
+.portlet-content ul
+{
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+}
+
+.portlet-content li
+{
+    padding: 2px 0 4px 0px;
+}
+
+.operations
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.operations li
+{
+    padding-bottom: 2px;
+}
+
+.operations li a
+{
+    font: bold 12px Arial;
+    color: #0066A4;
+    display: block;
+    padding: 2px 0 2px 8px;
+    line-height: 15px;
+    text-decoration: none;
+}
+
+.operations li a:visited
+{
+    color: #0066A4;
+}
+
+.operations li a:hover
+{
+    background: #80CFFF;
+}
+
+#inisesion{
+    /*    background-image: url("../images/favicon.png");
+        background-repeat: no-repeat;
+        background-position: right;*/
+    margin-right: 0px;
+    margin-top: 10px;
+    float: right; 
+     font-size:12px;
+    font-weight: bold;
+    color:#F5F5F5;
+    padding-right: 17px;
+}
+#inisesion a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: none;
+
+}
+#inisesion a:hover{
+    color: #ffffff;
+    text-shadow: 2px 0px 7px #ffffff;
+
+}
+
+.sesionon {
+    color: #ffffff !important;
+    text-shadow: 2px 0px 2px #ffffff;
+}
+a.sesion:link{
+    color: #ffffff !important;
+    text-shadow: 2px 0px 7px #ffffff;
+}
